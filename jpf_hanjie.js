@@ -5,8 +5,8 @@
    Tutorial 11
    Tutorial Case
 
-   Author: 
-   Date:   
+   Author: Gabriel Fuentes
+   Date: 3.5.19   
 
    Global Variables
    ================
@@ -54,8 +54,15 @@
 	
 */
 
+window.onload = init;
 
+function init() {
+      // Insert the title for the first puzzle
+      document.getElementById("puzzleTitle").innerHTML = "Puzzle 1";
 
+      // Insert the HTML code for the first puzzle table
+      document.getElementById("puzzle").innerHTML = drawPuzzle(puzzleHint, puzzleRating, puzzel1);
+}
 
 
 
